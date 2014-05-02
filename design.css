@@ -13,13 +13,13 @@
 }
 
 body {
-	color: #C5C8C6; /* Tomorrow Night: Foreground */
+	color: #EAEAEA; /* Tomorrow Night Bright: Foreground */
 	height: 100%;
 	z-index: 100;
 	font-size: 12px;
 	overflow: hidden;
 	overflow-y: visible;
-	background-color: #1D1F21; /* Tomorrow Night: Background */
+	background-color: #000000; /* Tomorrow Night Bright: Background */
 	font-family: "EspressoMono-Regular", "Menlo";
 }
 
@@ -65,7 +65,7 @@ body[dir=rtl] .sender {
 	width: 300px;
 	height: 21px;
 	font-size: 18px;
-	background: #282A2E; /* Tomorrow Night: Current Line */
+	background: #2A2A2A; /* Tomorrow Night Bright: Current Line */
 	border: 1px solid #373B41; /* Tomorrow: Selection */
 	border-radius: 5px;
 	padding: 5px;
@@ -89,7 +89,7 @@ body[dir=rtl] .sender {
 /* @group Time */
 
 .time {
-	color: #515151; /* Tomorrow Night Eighties: Selection */
+	color: #424242; /* Tomorrow Night Bright: Selection */
 	white-space: nowrap;
 }
 
@@ -103,15 +103,15 @@ body[dir=rtl] .time {
 /* @group Links */
 
 a {
-	color: #81A2BE; /* Tomorrow Night: Blue */
-	border-color: #81A2BE; /* Tomorrow Night: Blue */
+	color: #7AA6DA; /* Tomorrow Night Bright: Blue */
+	border-color: #7AA6DA; /* Tomorrow Night Bright: Blue */
 	text-decoration: none;
 	border-bottom: dotted 1px;
 }
 
 a:hover {
-	color: #B294BB; /* Tomorrow Night: Purple */
-	border-color: #B294BB; /* Tomorrow Night: Purple */
+	color: #C397D8; /* Tomorrow Night Bright: Purple */
+	border-color: #C397D8; /* Tomorrow Night Bright: Purple */
 }
 
 /* @end */
@@ -127,7 +127,7 @@ a:hover {
 	color: #D1F1A9; /* Tomorrow Night Blue: Green */
 	position: fixed;
 	padding: 2px 0.5em 3px;
-	background-color: rgba(113, 140, 00, 0.90); /* Tomorrow Night Blue: Green 95% */
+	background-color: rgba(113, 140, 00, 0.95); /* Tomorrow: Green 95% */
 	-webkit-transition: opacity 0.8s linear;
 	overflow: hidden;
 	white-space: nowrap;
@@ -153,7 +153,7 @@ a img {
 
 img {
 	display: block;
-	max-width: 95%;
+	max-width: 90%;
 	margin: 5px 1em 2px;
 }
 
@@ -166,7 +166,7 @@ div[id=mark] {
 	z-index: 295;
 	margin-top: -1px;
 	border-bottom: 1px dashed;
-	border-color: #CC6666; /* Tomorrow Night: Red */
+	border-color: #D54E53; /* Tomorrow Night Bright: Red */
 	-webkit-transition: 0.2s linear;
 }
 
@@ -182,9 +182,9 @@ div[id=mark] {
 .line[ltype*=ctcp],
 .line[ltype*=notice],
 .line[ltype*=wallops] {
-	color: #F0C674; /* Tomorrow Night: Yellow */
+	color: #E7C547; /* Tomorrow Night Bright: Yellow */
 	z-index: 191;
-	background-color: rgba(234, 183, 00, 0.2); /* Tomorrow: Yellow 25% */
+	background-color: rgba(234, 183, 00, 0.25); /* Tomorrow: Yellow 25% */
 	position: relative;
 }
 
@@ -201,7 +201,7 @@ div[id=mark] {
 	transition: background-color 0.5s;
 	z-index: 190;
 	position: relative;
-	background-color: rgba(245, 135, 31, 0.2) !important; /* Tomorrow: Orange 25% */
+	background-color: rgba(245, 135, 31, 0.25) !important; /* Tomorrow: Orange 25% */
 }
 
 /* @end */
@@ -213,7 +213,7 @@ div[id=mark] {
 	z-index: 191;
 	position: relative;
 	font-weight: normal;
-	background-color: rgba(200, 40, 41, 0.2) !important; /* Tomorrow: Red 25% */
+	background-color: rgba(200, 40, 41, 0.25) !important; /* Tomorrow: Red 25% */
 }
 
 div[ltype*=privmsg] .sender {
@@ -250,7 +250,7 @@ div[ltype*=action] .sender:after {
 .line[ltype*=dccfiletransfer] {
 	color: #4D4D4C; /* Tomorrow: Foreground */
 	z-index: 190;
-	background: rgba(55, 59, 65, 0.2); /* Tomorrow Night: Selection 25% */
+	background: rgba(66, 66, 66, 0.25); /* Tomorrow Night Bright: Selection 25% */
 	position: relative;
 }
 
@@ -300,33 +300,33 @@ div[ltype*=action] .sender:after {
 .line[ltype*=mode],
 .line[ltype*=topic],
 .line[ltype*=website] {
-	color: #393939; /* Tomorrow Night Eighties: Current Line */
+	color: #2A2A2A; /* Tomorrow Night Bright: Current Line */
 }
 
 /* Slightly more interesting events */
 .line[ltype*=kick],
 .line[ltype*=kill],
 .line[ltype*=mode][command=mode] {
-	color: #515151; /* Tomorrow Night Eighties: Selection */
+	color: #424242; /* Tomorrow Night Bright: Selection */
 }
 
 /* @group Event Indicators */
 
 div[ltype*=join] .message:before {
 	content: "→";
-	color: #B5BD68; /* Tomorrow Night: Green */
+	color: #B9CA4A; /* Tomorrow Night Bright: Green */
 }
 
 div[ltype*=kick] .message:before,
 div[ltype*=part] .message:before,
 div[ltype*=quit] .message:before {
 	content: "←";
-	color: #CC6666; /* Tomorrow Night: Red */
+	color: #D54E53; /* Tomorrow Night Bright: Red */
 }
 
 div[ltype*=nick] .message:before {
 	content:"◦";
-	color: #8ABEB7; /* Tomorrow Night: Aqua */
+	color: #70C0B1; /* Tomorrow Night Bright: Aqua */
 }
 
 /* @end */
@@ -336,11 +336,11 @@ div[ltype*=nick] .message:before {
 /* @group Own Messages */
 
 .sender[mtype*=myself] {
-	color: #81A2BE; /* Tomorrow Night: Blue */
+	color: #7AA6DA; /* Tomorrow Night Bright: Blue */
 }
 
 div[mtype*=myself] {
-	background-color: rgba(66, 113, 174, 0.2); /* Tomorrow Night Blue: Blue 25% */
+	background-color: rgba(66, 113, 174, 0.25); /* Tomorrow: Blue 25% */
 }
 
 /* @end */
@@ -509,7 +509,7 @@ div[mtype*=myself] {
 /* @group Foreground Colors */
 
 .effect[color-number='0'] {
-	color: #EAEAEA !important; /* Tomorrow Night Bright: Foreground */
+	color: #FFFFFF !important; /* Tomorrow Night Blue: Foreground */
 }
 
 .effect[color-number='1'] {
@@ -517,15 +517,15 @@ div[mtype*=myself] {
 }
 
 .effect[color-number='2'] {
-	color: #81A2BE !important; /* Tomorrow Night: Blue */
+	color: #7AA6DA !important; /* Tomorrow Night Bright: Blue */
 }
 
 .effect[color-number='3'] {
-	color: #B5BD68 !important; /* Tomorrow Night: Green */
+	color: #B9CA4A !important; /* Tomorrow Night Bright: Green */
 }
 
 .effect[color-number='4'] {
-	color: #CC6666 !important; /* Tomorrow Night: Red */
+	color: #D54E53 !important; /* Tomorrow Night Bright: Red */
 }
 
 .effect[color-number='5'] {
@@ -533,23 +533,23 @@ div[mtype*=myself] {
 }
 
 .effect[color-number='6'] {
-	color: #B294BB !important; /* Tomorrow Night: Purple */
+	color: #C397D8 !important; /* Tomorrow Night Bright: Purple */
 }
 
 .effect[color-number='7'] {
-	color: #DE935F !important; /* Tomorrow Night: Orange */
+	color: #E78C45 !important; /* Tomorrow Night Bright: Orange */
 }
 
 .effect[color-number='8'] {
-	color: #F0C674 !important; /* Tomorrow Night: Yellow */
+	color: #E7C547 !important; /* Tomorrow Night Bright: Yellow */
 }
 
 .effect[color-number='9'] {
-	color: #B9CA4A !important; /* Tomorrow Night Bright: Green */
+	color: #D1F1A9 !important; /* Tomorrow Night Blue: Green */
 }
 
 .effect[color-number='10'] {
-	color: #8ABEB7 !important; /* Tomorrow Night: Aqua */
+	color: #70C0B1 !important; /* Tomorrow Night Bright: Aqua */
 }
 
 .effect[color-number='11'] {
@@ -557,11 +557,11 @@ div[mtype*=myself] {
 }
 
 .effect[color-number='12'] {
-	color: #7AA6DA !important; /* Tomorrow Night Bright: Blue */
+	color: #BBDAFF !important; /* Tomorrow Night Blue: Blue */
 }
 
 .effect[color-number='13'] {
-	color: #C397D8 !important; /* Tomorrow Night Bright: Purple */
+	color: #EBBBFF !important; /* Tomorrow Night Blue: Purple */
 }
 
 .effect[color-number='14'] {
@@ -577,7 +577,7 @@ div[mtype*=myself] {
 /* @group Background Colors */
 
 .effect[bgcolor-number='0'] {
-	background-color: #EAEAEA !important; /* Tomorrow Night Bright: Foreground */
+	background-color: #FFFFFF !important; /* Tomorrow Night Blue: Foreground */
 }
 
 .effect[bgcolor-number='1'] {
@@ -585,15 +585,15 @@ div[mtype*=myself] {
 }
 
 .effect[bgcolor-number='2'] {
-	background-color: #81A2BE !important; /* Tomorrow Night: Blue */
+	background-color: #7AA6DA !important; /* Tomorrow Night Bright: Blue */
 }
 
 .effect[bgcolor-number='3'] {
-	background-color: #B5BD68 !important; /* Tomorrow Night: Green */
+	background-color: #B9CA4A !important; /* Tomorrow Night Bright: Green */
 }
 
 .effect[bgcolor-number='4'] {
-	background-color: #CC6666 !important; /* Tomorrow Night: Red */
+	background-color: #D54E53 !important; /* Tomorrow Night Bright: Red */
 }
 
 .effect[bgcolor-number='5'] {
@@ -601,23 +601,23 @@ div[mtype*=myself] {
 }
 
 .effect[bgcolor-number='6'] {
-	background-color: #B294BB !important; /* Tomorrow Night: Purple */
+	background-color: #C397D8 !important; /* Tomorrow Night Bright: Purple */
 }
 
 .effect[bgcolor-number='7'] {
-	background-color: #DE935F !important; /* Tomorrow Night: Orange */
+	background-color: #E78C45 !important; /* Tomorrow Night Bright: Orange */
 }
 
 .effect[bgcolor-number='8'] {
-	background-color: #F0C674 !important; /* Tomorrow Night: Yellow */
+	background-color: #E7C547 !important; /* Tomorrow Night Bright: Yellow */
 }
 
 .effect[bgcolor-number='9'] {
-	background-color: #B9CA4A !important; /* Tomorrow Night Bright: Green */
+	background-color: #D1F1A9 !important; /* Tomorrow Night Blue: Green */
 }
 
 .effect[bgcolor-number='10'] {
-	background-color: #8ABEB7 !important; /* Tomorrow Night: Aqua */
+	background-color: #70C0B1 !important; /* Tomorrow Night Bright: Aqua */
 }
 
 .effect[bgcolor-number='11'] {
@@ -625,11 +625,11 @@ div[mtype*=myself] {
 }
 
 .effect[bgcolor-number='12'] {
-	background-color: #7AA6DA !important; /* Tomorrow Night Bright: Blue */
+	background-color: #BBDAFF !important; /* Tomorrow Night Blue: Blue */
 }
 
 .effect[bgcolor-number='13'] {
-	background-color: #C397D8 !important; /* Tomorrow Night Bright: Purple */
+	background-color: #EBBBFF !important; /* Tomorrow Night Blue: Purple */
 }
 
 .effect[bgcolor-number='14'] {
